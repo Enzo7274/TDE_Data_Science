@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
+
 FileFoundCheck = False
 choice = [0]  # Use a list to hold the choice value to allow modification in functions
 
@@ -21,6 +22,7 @@ def askRunning():
 # Ensure the file path is correct and the file exists
 try:
     df = pd.read_csv('itch-analytics.csv')
+    
     print(df.info())
     FileFoundCheck = True
 except FileNotFoundError:
