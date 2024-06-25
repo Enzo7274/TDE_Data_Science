@@ -1,9 +1,12 @@
-# TDE - Data Science
+## TDE - Data Science
 Projeto desenvolvido por Enzo dos Anjos e João Matheus e submetido como TDE da disciplina de Data Science, ministrada por Prof. Me. Gledston Carneiro, no 5º semestre do curso de Análise e Desenvolvimento de Sistemas pela UNIFAN.
+
+Este arquivo conta com as instruções de uso, e também contém as informações dispostas tal como um relatório, conforme exigido pela atividade.
 
 Neste repositório encontram-se os arquivos em python com o código elaborado para a realização do projeto.
 Para executar os arquivos será necessário instalar as bibliotecas especificadas no item a seguir.
 
+## Sumário
 ### Bibliotecas utilizadas
 - numpy
 - pandas
@@ -32,9 +35,13 @@ Para executar os arquivos será necessário instalar as bibliotecas especificada
 
 ### Etapa 2: Desenvolvimento do Projeto
 
-  Para realização dessa tarefa, o primeiro passo é obter as informações. Apesar de ser a fonte das informações, o dashboard do itch.io não conta atualmente com uma funcionalidade nativa para o download desses dados, sendo necessário solicitar a equipe de suporte do site ou realizar a coleta manualmente. Porém através de uma aplicação já existente em python, foi possível extrair as informações presentes no dashboard no itch.io. Esses dados são processados em um arquivo .csv que pode posteriormente ser manipulado pelo pandas e pelo scikit-learn. O arquivo dispõe em uma tabela as seguintes informações: data, nome, número de vezes em que foram jogados, downloads, e visualizações.
+  Para realização dessa tarefa, o primeiro passo é obter as informações. Apesar de ser a fonte das informações, o dashboard do itch.io não conta atualmente com uma funcionalidade nativa para o download desses dados, sendo necessário solicitar a equipe de suporte do site ou realizar a coleta manualmente. Porém através de uma aplicação já existente em python (que pode ser acessada através deste [link](https://github.com/MollyJameson/itchio-analytics-csv-export)), foi possível extrair as informações presentes no dashboard no itch.io. Esses dados são processados em um arquivo .csv que pode posteriormente ser manipulado pelo pandas e pelo scikit-learn. O arquivo dispõe em uma tabela as seguintes informações: data, nome, número de vezes em que foram jogados, downloads, e visualizações.
 
-  Inicializamos o projeto importando a biblioteca pandas para efetivar as operações de manipulação dos dados da planilha. Logo, checamos se existe o arquivo dos dados extraídos do website dentro do diretório do algoritmo, para assim podermos realizar uma varredura que informa quantas células estão preenchidas em cada coluna. A partir disso, fomos inserindo outras funções de organização de dados. Assim, concluímos o projeto inicial com um arquivo em python que é capaz de realizar as seguintes funcionalidades:
+  Inicializamos o projeto importando a biblioteca pandas para efetivar as operações de manipulação dos dados da planilha. 
+
+  ``import pandas as pd``
+  
+  Logo, checamos se existe o arquivo dos dados extraídos do website dentro do diretório do algoritmo, para assim podermos realizar uma varredura que informa quantas células estão preenchidas em cada coluna. A partir disso, fomos inserindo outras funções de organização de dados. Assim, concluímos o projeto inicial com um arquivo em python que é capaz de realizar as seguintes funcionalidades:
 - Emitir as 5 primeiras linhas de cada coluna
 - Emitir as 5 últimas linhas de cada coluna
 - Emitir o tipo de dados de cada coluna
@@ -66,7 +73,7 @@ Depois, fomos atrás de testar as informações do relatório gerado pela aplica
     - A plataforma itch.io foi suficiente para suprir os dados dos quais precisavámos para realizar o TDE, porém se houvesse uma base de dados maior proveniente de avaliações de usuários, por exemplo, seria possível encontrar maneiras ainda mais específicas de cruzar e analisar as informações.
   - *Métodos Planejados: Quais métodos foram planejados para atingir os objetivos do projeto?*
     - Era planejado desenvolver uma aplicação que fizesse web scraping para se obter os dados. Felizmente, a aplicação necessária já existia, o que agilizou bastante o trabalho dado o curto prazo e ainda garantiu confiabilidade nos dados obtidos.
-- Desenvolvimento do Projeto:
+- **Desenvolvimento do Projeto**:
   - *Coleta de Dados: Como os dados foram importados e qual foi o processo de preparação dos dados?*
     - Os dados foram importados de .csv direto para o projeto através do framework pandas, que já permite fazer a filtragem, leitura e pré-processamento através dos métodos trazidos por ele mesmo.
   - *Análise Exploratória de Dados: Quais padrões e relações foram identificados durante a análise exploratória?*
@@ -75,11 +82,11 @@ Depois, fomos atrás de testar as informações do relatório gerado pela aplica
     - Floresta Randômica, Regressão Linear, Ajuste de Hiperparâmetros.
   - *Avaliação do Modelo: Apresentar as métricas de avaliação utilizadas e interpretar os resultados obtidos.*
     - O modelo apresentou resultado bastante condizente com as fontes de dados apresentados e o uso de múltiplas técnicas para o projeto permitiu garantir segurança nas informações obtidas.
-  - *Considerações Finais:*
-    - Foi um projeto que exigiu várias capacidades de programação, desenvolvimento, integração e trabalho cooperativo em equipe para que possa realizado, e simbólicamente representa várias das virtudes exigidas ao longo do semestre para chegar até aqui.
+- **Considerações Finais:**
   - *Desafios Enfrentados: Quais foram os principais desafios durante o desenvolvimento do projeto e como foram superados?*
     - O uso de uma linguagem de programação que conta com diversas particularidades em relação a outras linguagens empregadas até mesmo no desenvolvimento dos jogos utilizados como contexto para os dados que foram usados no projeto de Data Science. Além disso, conceitos relacionados com machine learning exigiram um olhar mais específico para a área, necessitando de mais atenção e aprofundamento antes que algo pudesse ser realizado.
   - *Aplicabilidade dos Resultados: Como os resultados do projeto podem ser utilizados para melhorar o desempenho?*
     - Esse resultado poderá ser levado em consideração para novos projetos e inclusive poderá ser citado como parte do projeto de TCC, como um anexo.
-  - *Próximos Passos: Quais seriam os próximos passos para melhorar ou expandir o projeto?*
-    - Considera-se posteriormente realizar novas implementações desse projeto como ferramenta auxiliar no desenvolvimento de jogos de forma rotineira para encontrar tendências e novas informações que venham a ser úteis em futuros projetos, como por exemplo interfaces gráficas e outras formas de leitura e saída de dados. 
+  - *Próximos Passos: Quais seriam os próximos passos para melhorar ou expandir o projeto? Considerar a inclusão de mais dados, a utilização de outros algoritmos de machine learning,
+ou a implementação de estratégias de intervenção.*
+    - Foi um projeto que exigiu várias capacidades de programação, desenvolvimento, integração e trabalho cooperativo em equipe para que possa realizado, e simbólicamente representa várias das virtudes exigidas ao longo do semestre para chegar até aqui. Considera-se posteriormente realizar novas implementações desse projeto como ferramenta auxiliar no desenvolvimento de jogos de forma rotineira para encontrar tendências e novas informações que venham a ser úteis em futuros projetos, como por exemplo interfaces gráficas e outras formas de leitura e saída de dados. 
