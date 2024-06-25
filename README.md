@@ -59,7 +59,27 @@ Depois, fomos atrás de testar as informações do relatório gerado pela aplica
 
 ### Etapa 3: Relatório Final
 
-vale destacar também a criação de uma segunda base de dados que extrai apenas os valores numéricos contidos da planilha para então simular uma média de flutuação de valor para cada coluna
-ex: se na coluna de visualizações, a cada dia que passa a quantidade de visualização tende a aumentar ou diminuir 
-
-para poder entregar um relatório compreensível que contabilize o total de visualizações, downloads e pesquisas do jogo nos últimos 31 dias (totalizando aproximadamente um mês inteiro), realizamos uma categorização da base de dados baseados por cada título de jogo, assim conseguimos contabilizar a quantidade de visualizações, downloads e demonstrações jogadas respectivamente
+- **Descrição do Projeto:**
+  - *Objetivo: Qual foi o objetivo do projeto e por que ele é importante?*
+    - O intuito era trazer clareza para as informações que haviam sido reunidas para nós, desenvolvedores, através de um sistema que é utilizado mundialmente por desenvolvedores dos mais variados níveis de habilidade. Com base no resultado das aplicações, tivemos uma ideia do que podemos aguardar em termos de predições para futuros projetos.
+  - *Fontes de Dados: Quais dados foram utilizados e como foram obtidos?*
+    - A plataforma itch.io foi suficiente para suprir os dados dos quais precisavámos para realizar o TDE, porém se houvesse uma base de dados maior proveniente de avaliações de usuários, por exemplo, seria possível encontrar maneiras ainda mais específicas de cruzar e analisar as informações.
+  - *Métodos Planejados: Quais métodos foram planejados para atingir os objetivos do projeto?*
+    - Era planejado desenvolver uma aplicação que fizesse web scraping para se obter os dados. Felizmente, a aplicação necessária já existia, o que agilizou bastante o trabalho dado o curto prazo e ainda garantiu confiabilidade nos dados obtidos.
+- Desenvolvimento do Projeto:
+  - *Coleta de Dados: Como os dados foram importados e qual foi o processo de preparação dos dados?*
+    - Os dados foram importados de .csv direto para o projeto através do framework pandas, que já permite fazer a filtragem, leitura e pré-processamento através dos métodos trazidos por ele mesmo.
+  - *Análise Exploratória de Dados: Quais padrões e relações foram identificados durante a análise exploratória?*
+    - Foi identificado um padrão entre frequência de acessos, downloads, visualizações, e desempenho relativo entre cada um dos jogos disponíveis na amostragem enviada.
+  - *Desenvolvimento do Modelo: Descrever o processo de seleção de recursos, divisão dos dados, e treinamento do modelo. Quais algoritmos foram utilizados e por quê?*
+    - Floresta Randômica, Regressão Linear, Ajuste de Hiperparâmetros.
+  - *Avaliação do Modelo: Apresentar as métricas de avaliação utilizadas e interpretar os resultados obtidos.*
+    - O modelo apresentou resultado bastante condizente com as fontes de dados apresentados e o uso de múltiplas técnicas para o projeto permitiu garantir segurança nas informações obtidas.
+  - *Considerações Finais:*
+    - Foi um projeto que exigiu várias capacidades de programação, desenvolvimento, integração e trabalho cooperativo em equipe para que possa realizado, e simbólicamente representa várias das virtudes exigidas ao longo do semestre para chegar até aqui.
+  - *Desafios Enfrentados: Quais foram os principais desafios durante o desenvolvimento do projeto e como foram superados?*
+    - O uso de uma linguagem de programação que conta com diversas particularidades em relação a outras linguagens empregadas até mesmo no desenvolvimento dos jogos utilizados como contexto para os dados que foram usados no projeto de Data Science. Além disso, conceitos relacionados com machine learning exigiram um olhar mais específico para a área, necessitando de mais atenção e aprofundamento antes que algo pudesse ser realizado.
+  - *Aplicabilidade dos Resultados: Como os resultados do projeto podem ser utilizados para melhorar o desempenho?*
+    - Esse resultado poderá ser levado em consideração para novos projetos e inclusive poderá ser citado como parte do projeto de TCC, como um anexo.
+  - *Próximos Passos: Quais seriam os próximos passos para melhorar ou expandir o projeto?*
+    - Considera-se posteriormente realizar novas implementações desse projeto como ferramenta auxiliar no desenvolvimento de jogos de forma rotineira para encontrar tendências e novas informações que venham a ser úteis em futuros projetos, como por exemplo interfaces gráficas e outras formas de leitura e saída de dados. 
